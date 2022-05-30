@@ -1,0 +1,35 @@
+{
+  "Basic React Native Component": {
+    "prefix": "mbc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import * as Styled from './styles';",
+      "",
+      "export function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}(){",
+      "  return (",
+      "    <Styled.Container>",
+      "",
+      "    </Styled.Container>",
+      "  );",
+      "}"
+    ],
+    "description": "Create the structure of a react native component"
+  },
+
+  "StyleSheet React Native Object": {
+    "prefix": "mso",
+    "body": [
+      "import styled from 'styled-components/native'",
+      "",
+      "import { View } from 'react-native'",
+      "",
+      "// import { RFValue } from 'react-native-responsive-fontsize'",
+      "",
+      "export const Container = styled.View`",
+      "  flex: 1",
+      "`"
+    ],
+    "description": "Create a style object with Stylesheet to separate file."
+  }
+}
